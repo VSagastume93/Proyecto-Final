@@ -15,7 +15,8 @@
     align-items: center;
     padding-left: 36px;
     background-color: white;
-    position: sticky;
+    position: fixed;
+    z-index: +1;
     top: 0;
 }
 
@@ -94,7 +95,7 @@
 /** Main Content **/
 
 .mainContainer{ 
-    margin: 50px 122px 0 122px;
+    margin: 150px 122px 0 122px;
     padding: 0;
 }
 
@@ -176,8 +177,8 @@
 } 
 
 .cajaC2{
-    background-image: url(./img/index/Forza\ 5.svg);
-    background-size: cover;
+    background-image: url(./img/index/Forza\ 5.jpg);
+    background-size:cover;
     background-repeat: no-repeat;
     margin-bottom: 18px;
 }
