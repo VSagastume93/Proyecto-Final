@@ -7,6 +7,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.headerContainer .mobileVersion{
+    display: none;
+}
+
 @media (min-width: 1000px){
 
     .headerContainer .logoMenu{
@@ -14,7 +18,7 @@
     }
 }
 
-.headerContainer{
+.headerContainer .desktop{
     width: 100%;
     height: 80px;
     display: flex;
@@ -27,46 +31,46 @@
     top: 0;
 }
 
-.headerContainer .section1{
+.headerContainer .desktop .section1{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 40px;
 } 
 
-.headerContainer .section2{
+.headerContainer .desktop .section2{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
 }
 
-.headerContainer .section2 .search{
+.headerContainer .desktop .section2 .search{
     display: flex;
     align-items: center;
 }
 
-.headerContainer .section2 .search input{
+.headerContainer .desktop .section2 .search input{
     border: none;
 }
 
 
-.headerContainer .mainMenu ul{
+.headerContainer .desktop .mainMenu ul{
     display: flex;
     gap: 20px;
     list-style: none;
 }
 
-.headerContainer .mainMenu ul li a{
+.headerContainer .desktop .mainMenu ul li a{
     text-decoration: none;
     color: black;
 }
 
-.headerContainer .search{
+.headerContainer .desktop .search{
 justify-content: flex-end;
 }
 
-.headerContainer .login{
+.headerContainer .desktop .login{
     justify-content: flex-end;
     margin-right: px;
 
@@ -455,77 +459,43 @@ padding-left: 50px;
 /*Version Mobil*/
 
 
-/* @media (max-width: 999px){
-
-    .headerContainer{
-        width: 100%;
-        height: 84px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 24px;
-        background-color: white;
-        position: fixed;
-        z-index: +1;
-        top: 0;
-    }
-
-    .headerContainer .section1 .mainMenu{
-        display: none;
-    }
-} */
-
 @media (max-width: 999px){
 
-    /* header */
+/*Header*/
 
-    .headerContainer{
-        padding: 24px;
+    .headerContainer .desktop{
+       display: none;
+    }
+
+    .headerContainer .mobileVersion{
         width: 100%;
+        padding: 24px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .headerContainer .mobileVersion .login{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .headerContainer .mobileVersion .logoXbox{
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .headerContainer .section1 .mainMenu{
-        display: none;
-    }
-
-    .headerContainer .section1 .logoMenu{
-        margin-left: 24px;
-    }
-
-    .headerContainer .section1{
-        width: 70%;
+   .headerContainer .mobileVersion .logoMenu{
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-start;
         align-items: center;
-        gap: 0;
-    }
+   }
 
-    .headerContainer .section2{
-        width: 30%;
-    }
-
-    .headerContainer .section1 .logoXbox{
-        margin-right: 15px;
-        margin-left: 15px;
-    }
-    
-    .headerContainer .section2 .login a .user{
-        padding: 0;
-        margin: 0;
-        
-    }
-
-    .headerContainer .section2 .search{
-        display: none;
-    }
-
-    .headerContainer .section2 .login .logoLogin{
-        margin: 0;
-        padding: 0;
-    }
+   .headerContainer .mobileVersion .logoMenu img{
+        width: 40px;
+        height: 40px;
+   }
 
     /* main content */
 
