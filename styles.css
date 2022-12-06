@@ -7,10 +7,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.headerContainer .mobileVersion{
-    display: none;
-}
-
 @media (min-width: 1000px){
 
     .headerContainer .logoMenu{
@@ -18,7 +14,7 @@
     }
 }
 
-.headerContainer .desktop{
+.headerContainer{
     width: 100%;
     height: 80px;
     display: flex;
@@ -31,46 +27,46 @@
     top: 0;
 }
 
-.headerContainer .desktop .section1{
+.headerContainer .section1{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 40px;
 } 
 
-.headerContainer .desktop .section2{
+.headerContainer .section2{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
 }
 
-.headerContainer .desktop .section2 .search{
+.headerContainer .section2 .search{
     display: flex;
     align-items: center;
 }
 
-.headerContainer .desktop .section2 .search input{
+.headerContainer .section2 .search input{
     border: none;
 }
 
 
-.headerContainer .desktop .mainMenu ul{
+.headerContainer .mainMenu ul{
     display: flex;
     gap: 20px;
     list-style: none;
 }
 
-.headerContainer .desktop .mainMenu ul li a{
+.headerContainer .mainMenu ul li a{
     text-decoration: none;
     color: black;
 }
 
-.headerContainer .desktop .search{
+.headerContainer .search{
 justify-content: flex-end;
 }
 
-.headerContainer .desktop .login{
+.headerContainer .login{
     justify-content: flex-end;
     margin-right: px;
 
@@ -459,54 +455,77 @@ padding-left: 50px;
 /*Version Mobil*/
 
 
+/* @media (max-width: 999px){
+
+    .headerContainer{
+        width: 100%;
+        height: 84px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px;
+        background-color: white;
+        position: fixed;
+        z-index: +1;
+        top: 0;
+    }
+
+    .headerContainer .section1 .mainMenu{
+        display: none;
+    }
+} */
+
 @media (max-width: 999px){
 
-/*Header*/
+    /* header */
 
-    .headerContainer .desktop{
-       display: none;
-    }
-
-    .headerContainer .mobileVersion{
-        width: 100vw;
-        padding: 10px 24px 24px 24px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .headerContainer .mobileVersion .login{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    .headerContainer .mobileVersion .logoXbox{
+    .headerContainer{
+        padding: 24px;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-   .headerContainer .mobileVersion .logoMenu{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-   }
+    .headerContainer .section1 .mainMenu{
+        display: none;
+    }
 
-    .headerContainer .mobileVersion .login a .user{
+    .headerContainer .section1 .logoMenu{
+        margin-left: 24px;
+    }
+
+    .headerContainer .section1{
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+    }
+
+    .headerContainer .section2{
+        width: 30%;
+    }
+
+    .headerContainer .section1 .logoXbox{
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    
+    .headerContainer .section2 .login a .user{
         padding: 0;
         margin: 0;
         
     }
 
-    .headerContainer .mobileVersion .login .logoLogin{
+    .headerContainer .section2 .search{
+        display: none;
+    }
+
+    .headerContainer .section2 .login .logoLogin{
         margin: 0;
         padding: 0;
-    } 
-
-
-
-
-
+    }
 
     /* main content */
 
