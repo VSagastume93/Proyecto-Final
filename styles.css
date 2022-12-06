@@ -483,7 +483,8 @@ padding-left: 50px;
         padding: 24px;
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
     }
 
     .headerContainer .section1 .mainMenu{
@@ -491,14 +492,20 @@ padding-left: 50px;
     }
 
     .headerContainer .section1{
+        width: 70%;
         display: flex;
         justify-content: space-around;
         align-items: center;
+        gap: 0;
+    }
+
+    .headerContainer .section2{
+        width: 30%;
     }
 
     .headerContainer .section1 .logoXbox{
-        margin-right: 20px;
-        margin-left: 10px;
+        margin-right: 5px;
+        margin-left: 5px;
     }
     
     .headerContainer .section2 .login a .user{
