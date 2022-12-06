@@ -7,13 +7,20 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+@media (min-width: 1000px){
+
+    .headerContainer .logoMenu{
+        display: none;
+    }
+}
+
 .headerContainer{
     width: 100%;
     height: 80px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding-left: 0px;
+    justify-content: space-between;
+    padding: 24px;
     background-color: white;
     position: fixed;
     z-index: +1;
@@ -22,61 +29,50 @@
 
 .headerContainer .section1{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    gap: 50px;
-}
-
-.headerContainer .section1 .logoMenu{
-    display: none;
-}
-
-.headerContainer .section1 .mainMenu ul{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    list-style: none;
-}
-
-.headerContainer .section1 .mainMenu ul li a{
-    text-decoration: none;
-    color: black;
-    padding-right: 30px;
-    display: flex;
-}
-
-.headerContainer .mainMenu ul li a img{
-    padding-left: 2px;
-}
+    gap: 40px;
+} 
 
 .headerContainer .section2{
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 40px;
-    margin-right: 30px;
 }
 
 .headerContainer .section2 .search{
     display: flex;
     align-items: center;
-    justify-content: center;
 }
-
-.headerContainer .section2 .search a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 
 .headerContainer .section2 .search input{
     border: none;
-    color: gray;
-    width: 100px;
 }
 
 
-.headerContainer .section2 .login a .user{
+.headerContainer .mainMenu ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.headerContainer .mainMenu ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.headerContainer .search{
+justify-content: flex-end;
+}
+
+.headerContainer .login{
+    justify-content: flex-end;
+    margin-right: px;
+
+}
+
+.headerContainer .login a .user{
     background-image: url('img/index/PhotoRoom-20221008_083003.png');
     background-size: cover;
     width: 60px;
@@ -85,7 +81,7 @@
     border-radius: 50%;
 }
 
-.headerContainer .section2 .login a .logoLogin{
+.headerContainer .login a .logoLogin{
     background-image: url('img/index/Logo\ Xbox\ 2.svg');
     background-size: contain;
     width: 26px;
@@ -99,7 +95,7 @@
 /** Main Content **/
 
 .mainContainer{ 
-    margin: 150px 122px 0 122px;
+    margin: 30px 122px 0 122px;
     padding: 0;
 }
 
@@ -120,6 +116,7 @@
 
 .mainContainer .welcomeInfo .right img{
     width: 100%;
+    margin-top: 100px;
 }
 
 
@@ -455,3 +452,153 @@ padding-left: 50px;
 }
 
 
+/*Version Mobil*/
+
+
+/* @media (max-width: 999px){
+
+    .headerContainer{
+        width: 100%;
+        height: 84px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px;
+        background-color: white;
+        position: fixed;
+        z-index: +1;
+        top: 0;
+    }
+
+    .headerContainer .section1 .mainMenu{
+        display: none;
+    }
+} */
+
+@media (max-width: 999px){
+
+    /* header */
+
+    .headerContainer{
+        padding: 24px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .headerContainer .section1 .mainMenu{
+        display: none;
+    }
+
+    .headerContainer .section1{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .headerContainer .section1 .logoXbox{
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+    
+    .headerContainer .section2 .login a .user{
+        padding: 0;
+        margin: 0;
+        
+    }
+
+    .headerContainer .section2 .search{
+        display: none;
+    }
+
+    .headerContainer .section2 .login .logoLogin{
+        margin: 0;
+        padding: 0;
+    }
+
+    /* main content */
+
+    .mainContainer{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainContainer .welcomeInfo{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .mainContainer .welcomeInfo .right .welcomeImage{
+        margin: 0;
+    }
+
+    .mainContainer .welcomeInfo .right{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mainContainer .welcomeInfo .left{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mainContainer .welcomeInfo .left h1{
+        font-size: 50px;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .mainContainer .welcomeInfo .left h3{
+        text-align: center;
+        font-size: 18px;
+    }
+
+    /* footer */
+
+    .footer{
+        width: 100%;
+        height: 430px;
+    }
+
+    .footer .right{
+        flex-direction: column;
+        gap: 50px;
+        padding-top: 50px;
+    }
+
+    .footer .left{
+       display: flex;
+       flex-direction: column;
+    }
+
+    .footer .left .left-side{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+    }
+
+    .footer .left .right-side a{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        text-align: center;
+        
+    }
+
+
+}
