@@ -32,7 +32,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: 40px;
-}
+} 
 
 .headerContainer .section2{
     display: flex;
@@ -94,7 +94,7 @@ justify-content: flex-end;
 
 /** Main Content **/
 
-.mainContainer{
+.mainContainer{ 
     margin: 30px 122px 0 122px;
     padding: 0;
 }
@@ -172,12 +172,12 @@ justify-content: flex-end;
     grid-row: 1/3;
     margin-right: 18px;
     overflow: hidden;
-}
+} 
 
 .cajaC1 .imagen{
     background-image: url('img/index/Battlefield.svg');
     background-position: center;
-    background-size:cover;
+    background-size:cover; 
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
@@ -196,7 +196,7 @@ justify-content: flex-end;
 .cajaC2 .imagen{
     background-image: url('img/index/Forza\ 5.jpg');
     background-position: center;
-    background-size:cover;
+    background-size:cover; 
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
@@ -210,7 +210,7 @@ justify-content: flex-end;
 .cajaC3 .imagen{
     background-image: url('img/index/Fifa\ 23.svg');
     background-position: center;
-    background-size:cover;
+    background-size:cover; 
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
@@ -296,7 +296,7 @@ justify-content: flex-end;
 
 .cajaC5 .right .image:hover{
     transform: scale(1.1);
-
+   
 }
 
 .cajaC6{
@@ -433,7 +433,7 @@ padding-left: 50px;
 .footer .right .right-side ul{
     text-decoration: none;
     list-style: none;
-
+    
 }
 
 .footer .right .right-side ul li{
@@ -483,8 +483,7 @@ padding-left: 50px;
         padding: 24px;
         width: 100%;
         display: flex;
-        gap: 10px;
-        /* justify-content: space-between; */
+        justify-content: space-between;
     }
 
     .headerContainer .section1 .mainMenu{
@@ -492,26 +491,20 @@ padding-left: 50px;
     }
 
     .headerContainer .section1{
-        width: 70%;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        gap: 10px;
-    }
-
-    .headerContainer .section2{
-        width: 30%;
     }
 
     .headerContainer .section1 .logoXbox{
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-right: 20px;
+        margin-left: 10px;
     }
-
+    
     .headerContainer .section2 .login a .user{
         padding: 0;
         margin: 0;
-
+        
     }
 
     .headerContainer .section2 .search{
@@ -604,7 +597,7 @@ padding-left: 50px;
         align-items: center;
         font-size: 12px;
         text-align: center;
-
+        
     }
 
 
