@@ -468,9 +468,13 @@ padding-left: 50px;
 
     .headerContainer .mobileVersion{
         width: 100%;
-        padding: 24px;
+        padding: 12px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        position: fixed;
+        z-index: +1;
+        top: 0;
+        background-color: white;
     }
 
     .headerContainer .mobileVersion .login{
@@ -559,7 +563,7 @@ padding-left: 50px;
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(7, 200px);
+        grid-template-rows: repeat(8, 200px);
         margin-bottom: 50px;
     }
 
@@ -643,7 +647,7 @@ padding-left: 50px;
 
     .mainContainer .games .cajaC6{
         grid-column: 1/3;
-        grid-row: 7/8;
+        grid-row: 7/9;
     }
 
 
@@ -652,26 +656,67 @@ padding-left: 50px;
 
     .footer{
         width: 100%;
-        height: 430px;
+        height: 280px;
     }
 
     .footer .right{
         flex-direction: column;
-        gap: 50px;
-        padding-top: 50px;
+        gap: 20px;
+        padding-top: 15px;
     }
 
+    .footer .right p{
+        font-size: 14px;
+    }
+
+    .footer .right a{
+        font-size: 12px;
+    }
+
+    .footer .right .left-side{
+        margin: 0;
+        width: 100%;
+        gap: 0;
+        align-items: center;
+    }
+
+    .footer .right .left-side ul li{
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer .right .right-side{
+        margin: 0;
+        width: 100%;
+        gap: 0;
+        align-items: center;
+    }
+
+    .footer .right .right-side ul li{
+        width: 100%;
+        text-align: center;
+    }
+
+
     .footer .left{
+        height: 100%;
        display: flex;
        flex-direction: column;
+       justify-content: center;
+       align-items: center;
     }
 
     .footer .left .left-side{
+        padding: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0;
         width: 100%;
+        height: 70%;
+    }
+
+    .footer .left .right-side{
+        height: 30%;
     }
 
     .footer .left .right-side a{
