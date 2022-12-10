@@ -103,6 +103,10 @@ justify-content: flex-end;
     padding: 0;
 }
 
+.mainContainer .menu{
+    display: none;
+}
+
 .mainContainer .welcomeInfo{
     display: flex;
 }
@@ -466,9 +470,17 @@ padding-left: 50px;
        display: none;
     }
 
+    .headerContainer .mobileVersion label img{
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+
+    .headerContainer .mobileVersion label img:hover{
+        transform: scale(1.2);
+    }
+
     .headerContainer .mobileVersion{
         width: 100%;
-        padding: 12px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         position: fixed;
@@ -481,6 +493,7 @@ padding-left: 50px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        padding:12px 12px 12px 0;
     }
 
     .headerContainer .mobileVersion .logoXbox{
@@ -489,15 +502,21 @@ padding-left: 50px;
         align-items: center;
     }
 
-   .headerContainer .mobileVersion .logoMenu{
+   .headerContainer .mobileVersion .checkbtn{
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        padding-left: 12px;
+        
    }
 
    .headerContainer .mobileVersion .logoMenu img{
         width: 40px;
         height: 40px;
+   }
+
+   #check{
+    display: none;
    }
 
     /* main content */
@@ -506,7 +525,60 @@ padding-left: 50px;
         margin: 20px;
         display: flex;
         flex-direction: column;
+        padding-top: 84px;
     }
+
+    .headerContainer ul{
+        background-color: #107C10;
+        margin-top: 80px;
+        width: 100%;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+        list-style: none;
+        position: fixed;
+        transition: all 0.5s;
+        left: -100%;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+    
+    .headerContainer ul li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 50px;
+        border:3px solid white;
+        border-radius: 40px;
+        box-shadow: 6px 6px 30px 3px rgba(0,0,0,0.75);
+        transition: all 0.5s;
+    }
+
+     .headerContainer ul li:hover{
+        background-color: #035903;
+        transform:scale(1.1)
+    }
+
+     .headerContainer ul li a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 40px;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    /* Welcome Info */
 
     .mainContainer .welcomeInfo{
         width: 100%;
