@@ -1,0 +1,15 @@
+@import "./utilities/variables";
+//tipografía//
+@import "./base/typo";
+//base//
+@import "./base/reset";
+//header//
+@import "./layout/header";
+// Main content index//
+@import "./layout/main-index";
+//Footer//
+@import "./layout/footer";
+//Main-Juegos//
+@import "./layout/main-juegos";
+//Media Queries//
+@import "./layout/mediaQ";

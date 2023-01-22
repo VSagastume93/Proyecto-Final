@@ -1,0 +1,108 @@
+.headerContainer .mobileVersion {
+    display: none;
+
+}
+
+.headerContainer {
+    @media (min-width: 1000px) {
+        .logoMenu {
+            display: none;
+        }
+    }
+
+
+    .desktop {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 24px;
+        background-color: white;
+        position: fixed;
+        z-index: +1;
+        top: 0;
+
+        .mainMenu {
+            ul {
+                display: flex;
+                gap: 20px;
+                list-style: none;
+
+                li {
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .section1 {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .section2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+
+            .search {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+
+                .login {
+                    justify-content: flex-end;
+                    margin-right: px;
+                }
+
+                input {
+                    border: none;
+                }
+            }
+
+
+        }
+
+
+    }
+}
+
+.headerContainer {
+    .login {
+        a {
+            .user {
+                background-image: url('../assets/index/PhotoRoom-20221008_083003.png');
+                background-size: cover;
+                width: 60px;
+                height: 60px;
+                border: 2px solid black;
+                border-radius: 50%;
+            }
+
+            .logoLogin {
+                background-image: url('../assets/index/Logo\ Xbox\ 2.svg');
+                background-size: contain;
+                width: 26px;
+                height: 26px;
+                position: relative;
+                left: 40px;
+                top: -8px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+}
+

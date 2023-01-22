@@ -1,0 +1,302 @@
+.mainGames {
+    width: 100%;
+    margin-top: 80px;
+
+    .bannerPrincipal {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('../assets/juegos/banner-fortnite.jpg');
+        background-size: cover;
+        background-position: 0 0 -10px 0;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        padding-right: 50px;
+        overflow: hidden;
+
+        img {
+            width: 50%;
+            -webkit-animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+            animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: justify;
+            gap: 20px;
+            width: 50%;
+            height: 50%;
+            color: white;
+            text-shadow: black 0.1em 0.1em 0.2em;
+            -webkit-animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+            animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+
+            h1 {
+                font-weight: 400;
+                font-size: 3vw;
+            }
+
+            h2 {
+                font-weight: 400;
+                font-size: 1.5vw;
+            }
+
+            .botonJuegos {
+                background-color: #107C10;
+                color: white;
+                font-weight: 700;
+                margin-top: 11px;
+                width: 235px;
+                height: 68px;
+                text-transform: uppercase;
+                border: none;
+                transition: all 0.5s;
+
+                &:hover {
+                    background-color: #035903;
+                    cursor: pointer;
+                    box-shadow: 1px 0px 10px 2px rgba(0, 0, 0, 0.75);
+                }
+            }
+        }
+    }
+
+    .nuevosLanzamientos {
+        width: 100%;
+        height: auto;
+        padding: 60px 20px 20px 20px;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("../assets/juegos/background-games.png");
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 40px;
+
+        .caption {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            h1 {
+                font-weight: 400;
+            }
+
+            h2 {
+                font-weight: 400;
+                font-size: 20px;
+            }
+        }
+
+        .gamesContainer {
+            width: 100%;
+            padding: 20px;
+            gap: 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            .gameCard {
+                width: 200px;
+                height: 250px;
+                margin-bottom: 50px;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                align-items: center;
+                text-decoration: none;
+
+                img {
+                    border-radius: 10px;
+                    height: 200px;
+                    object-fit: cover;
+                    transition: ease 0.2s;
+
+                    &:hover {
+                        transform: scale(1.04);
+                        box-shadow: 1px 0px 10px 2px rgba(255, 255, 255, 0.75);
+                    }
+                }
+
+                h2{
+                    color: white;
+                    font-size: 12px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+
+@-webkit-keyframes puff-in-center {
+    0% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes puff-in-center {
+    0% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+
+//Slider//
+
+.mainGames{
+    .slider{
+        width: 100%;
+        min-height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), #107C10;
+        overflow: hidden;
+    }
+
+    h1{
+        color: white;
+        text-shadow: black 0.1em 0.1em 0.2em;
+        font-weight: 400;
+    }
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    z-index: 0;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 600px;
+    height: auto;
+    border-radius: 30px;
+    position: relative;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+    filter: blur(4px);
+
+    img{
+        display: block;
+        width: 100%;
+        border-radius: 30px;
+    }
+
+    .leyenda{
+        position: absolute;
+        left: 20px;
+        bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .gp-img{
+            background-image: url("../assets/juegos/Carousel/gamepass-logo.png");
+            background-size: cover;
+            width: 90px;
+            height: 50px;
+        }
+
+        h1{
+            color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-weight: 400;
+    font-size: 30px;
+        }
+
+        h2{
+            color: white;
+            text-shadow: black 0.1em 0.1em 0.2em;
+            font-weight: 400;
+            font-size: 12px
+        }
+
+        h3{
+            color: white;
+            text-shadow: black 0.1em 0.1em 0.2em;
+            font-weight: 400;
+            font-size: 12px
+        }
+    }
+}
+
+.swiper-slide-active {
+    filter: blur(0px);
+
+    .game{
+        img{
+            filter: brightness(0.7);
+        }
+    }
+}
+
+.swiper-slide-shadow-left {
+    border-radius: 30px;
+}
+
+.swiper-slide-shadow-right {
+    border-radius: 30px;
+}
+
+.followUsGames {
+    width: 100%;
+    height: 100px;
+    background-color: #107C10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    gap: 20px;
+
+    a{
+        img{
+            width: 40px;
+    height: 40px;
+    margin: 10px;
+    transition: transform .5s;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+        }
+    }
+
+h1{
+    color: #393939;
+    font-size: 20px;
+}
+}
