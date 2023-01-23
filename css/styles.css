@@ -649,7 +649,7 @@
               color: #023b02;
               cursor: pointer; }
   .consolasContainer .velocity-tec .velocity-img {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("/assets/consolas/velocity.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("../assets/consolas/velocity.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
