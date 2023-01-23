@@ -489,5 +489,105 @@
     }
 }
 
+//Main Consolas//
+
+@media (max-width: 999px){
+    .consolasContainer{
+        
+        .banner-bienvenida{
+
+            .caption{
+                h1{
+                    text-align: center;
+                }
+    
+                h2{
+                    display: none;
+                }
+    
+                h3{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+            }
+        }
+    }
+
+
+    .velocity-tec{
+
+       .velocity-img{
+
+        .velocity-intro{
+                
+                text-align: center;
+                margin-top: 0px;
+        }
+
+           .caracteristicas{
+               flex-direction: column;
+               align-items: center;
+               justify-content: start;
+               align-items: flex-start;
+
+               div{
+                width: 100%;
+                padding:0 50px 0 50px;
+                img{
+                    width: 10%;
+                }
+               }
+
+               .fotogramas{
+                padding-left: 20%;
+               }
+
+               .ocho-k{
+                padding-left: 40%;
+               }
+
+               .velocity{
+                width: 100%;
+                height: auto;
+                padding-left: 50%;
+
+                h3{
+                    text-align: center;
+                }
+               }
+               }
+           }
+       }
+
+       .container-4k{
+        
+        h1{
+            margin: 50px 0 50px 0 !important;
+            font-size: 3vw !important;
+        }
+       }
+
+       .cardContainer{
+        width: 100% !important;
+        gap: 40px !important;
+        height: auto;
+        flex-wrap: wrap;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+
+        .card{
+            width: 25% !important;
+            height: 35% !important;
+            height: 400px;
+        }
+       }
+    }
+    
+
+
 
 

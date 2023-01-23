@@ -654,7 +654,7 @@
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 800px;
+    height: 900px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -664,7 +664,7 @@
       text-shadow: black 0.1em 0.1em 0.2em;
       color: white;
       font-weight: 400;
-      font-size: 2.5vw;
+      font-size: 30px;
       -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
       animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
     .consolasContainer .velocity-tec .velocity-img .caracteristicas {
@@ -681,17 +681,17 @@
           text-shadow: black 0.1em 0.1em 0.2em;
           color: white;
           font-weight: 700;
-          font-size: 1.5vw;
+          font-size: 25px;
           -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
           animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
           .consolasContainer .velocity-tec .velocity-img .caracteristicas div h1 span {
-            font-size: 1vw;
+            font-size: 16px;
             font-weight: 400; }
         .consolasContainer .velocity-tec .velocity-img .caracteristicas div h3 {
           text-shadow: black 0.1em 0.1em 0.2em;
           color: white;
           font-weight: 400;
-          font-size: 1.5vw;
+          font-size: 20px;
           -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
           animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
       .consolasContainer .velocity-tec .velocity-img .caracteristicas .velocity {
@@ -702,6 +702,8 @@
         align-items: center;
         -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
         animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
+        .consolasContainer .velocity-tec .velocity-img .caracteristicas .velocity img {
+          width: 30%; }
 
 @-webkit-keyframes text-focus-in {
   0% {
@@ -747,7 +749,7 @@
         margin-bottom: 100px; }
       .consolasContainer .juegos-4k .container-4k .cardContainer {
         width: 80%;
-        height: 50%;
+        height: 100%;
         display: flex;
         gap: 5px; }
         .consolasContainer .juegos-4k .container-4k .cardContainer .card {
@@ -755,7 +757,7 @@
           overflow: hidden;
           border-radius: 20px; }
         .consolasContainer .juegos-4k .container-4k .cardContainer .card-dl {
-          background-image: url("/assets/consolas/deathloop cover.jpg");
+          background-image: url("../assets/consolas/deathloop cover.jpg");
           background-size: cover;
           background-repeat: no-repeat;
           width: 100%;
@@ -773,7 +775,7 @@
             object-fit: cover;
             margin-bottom: 50px; }
         .consolasContainer .juegos-4k .container-4k .cardContainer .card-hol {
-          background-image: url("/assets/consolas/high on life.jpg");
+          background-image: url("../assets/consolas/high on life.jpg");
           background-size: cover;
           background-repeat: no-repeat;
           width: 100%;
@@ -791,7 +793,7 @@
             object-fit: cover;
             margin-bottom: 50px; }
         .consolasContainer .juegos-4k .container-4k .cardContainer .card-plaguetale {
-          background-image: url("/assets/consolas/plaguetale.jpg");
+          background-image: url("../assets/consolas/plaguetale.jpg");
           background-size: cover;
           background-repeat: no-repeat;
           width: 100%;
@@ -809,7 +811,7 @@
             object-fit: cover;
             margin-bottom: 50px; }
         .consolasContainer .juegos-4k .container-4k .cardContainer .card-redfall {
-          background-image: url("/assets/consolas/redfall.jpg");
+          background-image: url("../assets/consolas/redfall.jpg");
           background-size: cover;
           background-repeat: no-repeat;
           width: 100%;
@@ -827,7 +829,7 @@
             object-fit: cover;
             margin-bottom: 50px; }
         .consolasContainer .juegos-4k .container-4k .cardContainer .card-starfield {
-          background-image: url("/assets/consolas/starfield.jpg");
+          background-image: url("../assets/consolas/starfield.jpg");
           background-size: cover;
           background-repeat: no-repeat;
           width: 100%;
@@ -844,6 +846,36 @@
             width: 60%;
             object-fit: cover;
             margin-bottom: 50px; }
+  .consolasContainer .servicioTecnico {
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .consolasContainer .servicioTecnico .banner {
+      width: 80%;
+      height: 70%;
+      background-color: #107C10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px; }
+      .consolasContainer .servicioTecnico .banner h1 {
+        text-shadow: black 0.1em 0.1em 0.2em;
+        color: white;
+        font-weight: 400;
+        font-size: 1.5vw; }
+      .consolasContainer .servicioTecnico .banner a {
+        text-shadow: black 0.1em 0.1em 0.2em;
+        color: white;
+        font-weight: 700;
+        font-size: 1vw;
+        text-decoration: none; }
+        .consolasContainer .servicioTecnico .banner a:hover {
+          color: #E6E6E6;
+          transform: scale(1.1);
+          transition: all 0.5s; }
 
 @media (max-width: 999px) {
   .headerContainer .desktop {
@@ -1151,3 +1183,52 @@
 @media (max-width: 450px) {
   .swiper-slide {
     width: 350px; } }
+
+@media (max-width: 999px) {
+  .consolasContainer .banner-bienvenida .caption h1 {
+    text-align: center; }
+  .consolasContainer .banner-bienvenida .caption h2 {
+    display: none; }
+  .consolasContainer .banner-bienvenida .caption h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .velocity-tec .velocity-img .velocity-intro {
+    text-align: center;
+    margin-top: 0px; }
+  .velocity-tec .velocity-img .caracteristicas {
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    align-items: flex-start; }
+    .velocity-tec .velocity-img .caracteristicas div {
+      width: 100%;
+      padding: 0 50px 0 50px; }
+      .velocity-tec .velocity-img .caracteristicas div img {
+        width: 10%; }
+    .velocity-tec .velocity-img .caracteristicas .fotogramas {
+      padding-left: 20%; }
+    .velocity-tec .velocity-img .caracteristicas .ocho-k {
+      padding-left: 40%; }
+    .velocity-tec .velocity-img .caracteristicas .velocity {
+      width: 100%;
+      height: auto;
+      padding-left: 50%; }
+      .velocity-tec .velocity-img .caracteristicas .velocity h3 {
+        text-align: center; }
+  .container-4k h1 {
+    margin: 50px 0 50px 0 !important;
+    font-size: 3vw !important; }
+  .cardContainer {
+    width: 100% !important;
+    gap: 40px !important;
+    height: auto;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center; }
+    .cardContainer .card {
+      width: 25% !important;
+      height: 35% !important;
+      height: 400px; } }

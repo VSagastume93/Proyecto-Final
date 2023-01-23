@@ -123,7 +123,7 @@
             background-size: cover;
             background-position: center;
             width: 100%;
-            height: 800px;
+            height: 900px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -134,7 +134,7 @@
                 text-shadow: black 0.1em 0.1em 0.2em;
                 color: white;
                 font-weight: 400;
-                font-size: 2.5vw;
+                font-size: 30px;
                 -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
                 animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
             }
@@ -155,12 +155,12 @@
                         text-shadow: black 0.1em 0.1em 0.2em;
                         color: white;
                         font-weight: 700;
-                        font-size: 1.5vw;
+                        font-size: 25px;
                         -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
                         animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 
                         span{
-                            font-size: 1vw;
+                            font-size: 16px;
                             font-weight: 400;
                         }
                     }
@@ -169,7 +169,7 @@
                         text-shadow: black 0.1em 0.1em 0.2em;
                         color: white;
                         font-weight: 400;
-                        font-size: 1.5vw;
+                        font-size: 20px;
                         -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
                         animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
                     }
@@ -183,6 +183,10 @@
                     align-items: center;
                     -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
                         animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+
+                        img{
+                            width: 30%;
+                        }
                 }
             }
 
@@ -251,7 +255,7 @@
 
         .cardContainer{
             width: 80%;
-            height: 50%;
+            height: 100%;
             display: flex;
             gap: 5px;
 
@@ -263,7 +267,7 @@
             }
 
             .card-dl{
-                background-image: url("/assets/consolas/deathloop\ cover.jpg");
+                background-image: url("../assets/consolas/deathloop\ cover.jpg");
                 background-size: cover;
                 background-repeat: no-repeat;
                 width: 100%;
@@ -287,7 +291,7 @@
             }
 
             .card-hol{
-                background-image: url("/assets/consolas/high\ on\ life.jpg");
+                background-image: url("../assets/consolas/high\ on\ life.jpg");
                 background-size: cover;
                 background-repeat: no-repeat;
                 width: 100%;
@@ -311,7 +315,7 @@
             }
 
             .card-plaguetale{
-                background-image: url("/assets/consolas/plaguetale.jpg");
+                background-image: url("../assets/consolas/plaguetale.jpg");
                 background-size: cover;
                 background-repeat: no-repeat;
                 width: 100%;
@@ -335,7 +339,7 @@
             }
 
             .card-redfall{
-                background-image: url("/assets/consolas/redfall.jpg");
+                background-image: url("../assets/consolas/redfall.jpg");
                 background-size: cover;
                 background-repeat: no-repeat;
                 width: 100%;
@@ -359,7 +363,7 @@
             }
 
             .card-starfield{
-                background-image: url("/assets/consolas/starfield.jpg");
+                background-image: url("../assets/consolas/starfield.jpg");
                 background-size: cover;
                 background-repeat: no-repeat;
                 width: 100%;
@@ -385,4 +389,44 @@
     }
 }
 
+.servicioTecnico{
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .banner{
+        width: 80%;
+        height: 70%;
+        background-color: $color-principal;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px;
+
+        h1{
+            text-shadow: black 0.1em 0.1em 0.2em;
+            color: white;
+            font-weight: 400;
+            font-size: 1.5vw;
+        }
+
+        a{
+            text-shadow: black 0.1em 0.1em 0.2em;
+            color: white;
+            font-weight: 700;
+            font-size: 1vw;
+            text-decoration: none;
+
+            &:hover{
+                color: $gris-claro;
+                transform: scale(1.1);
+                transition: all 0.5s;
+            }
+        }
+    }
 }
+}
+
