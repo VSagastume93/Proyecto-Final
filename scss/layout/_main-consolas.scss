@@ -1,0 +1,94 @@
+.consolasContainer{
+    .consolas{
+        label{
+            h1{
+                width: 100vw;
+                font-size: xxx-large;
+                text-align: center;
+                margin-top: 100px;
+                color: $color-principal;
+                font-weight: 400;
+                margin-bottom: 100px;
+            }
+        }
+
+        .banner{
+            margin: 0;
+            padding: 0;
+            background-color: $gris-claro;
+        }
+    
+        img{
+            width: 100vw;
+        }
+
+        .caption{
+            margin: 0;
+            width: 100vw;
+            display: flex;
+            background-color: $gris-claro;
+
+            .left{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content:flex-start;
+                width: 50%;
+                gap: 10px;
+
+                h1{
+                    color: $color-principal;
+                    font-weight: 400;
+                    font-size: 2em;
+                }
+
+                h2{
+                    padding: 10px 40px 0 40px;
+                    font-size: 1.5em;
+                    width: 80%;
+                    text-align: center;
+                }
+
+                h3{
+                    display: flex;
+                    gap: 20px;
+                    font-size: 1em;
+                    padding-bottom: 50px;
+                    color: $verde-oscuro;
+                }
+            }
+
+            .right{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content:flex-start;
+                width: 50%;
+                gap: 10px;
+
+                h1{
+                    color: $color-principal;
+                    font-weight: 400;
+                    font-size: 2em;
+                }
+
+                h2{
+                    padding: 10px 40px 0 40px;
+                    font-size: 1.5em;
+                    width: 80%;
+                    text-align: center;
+                }
+
+                h3{
+                    display: flex;
+                    gap: 20px;
+                    font-size: 1em;
+                    padding-bottom: 50px;
+                    color: $verde-oscuro    ;
+                }
+            }
+        }
+    }
+
+    
+}
