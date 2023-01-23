@@ -752,13 +752,98 @@
         gap: 5px; }
         .consolasContainer .juegos-4k .container-4k .cardContainer .card {
           width: 20%;
+          overflow: hidden;
+          border-radius: 20px; }
+        .consolasContainer .juegos-4k .container-4k .cardContainer .card-dl {
+          background-image: url("/assets/consolas/deathloop cover.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 100%;
           height: 100%;
           border-radius: 20px;
-          overflow: hidden; }
-          .consolasContainer .juegos-4k .container-4k .cardContainer .card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; }
+          overflow: hidden;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center; }
+          .consolasContainer .juegos-4k .container-4k .cardContainer .card-dl:hover {
+            transform: scale(1.1);
+            transition: all 0.5s; }
+          .consolasContainer .juegos-4k .container-4k .cardContainer .card-dl img {
+            width: 60%;
+            object-fit: cover;
+            margin-bottom: 50px; }
+        .consolasContainer .juegos-4k .container-4k .cardContainer .card-hol {
+          background-image: url("/assets/consolas/high on life.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 100%;
+          border-radius: 20px;
+          overflow: hidden;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center; }
+          .consolasContainer .juegos-4k .container-4k .cardContainer .card-hol:hover {
+            transform: scale(1.1);
+            transition: all 0.5s; }
+          .consolasContainer .juegos-4k .container-4k .cardContainer .card-hol img {
+            width: 60%;
+            object-fit: cover;
+            margin-bottom: 50px; }
+        .consolasContainer .juegos-4k .container-4k .cardContainer .card-plaguetale {
+          background-image: url("/assets/consolas/plaguetale.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 100%;
+          border-radius: 20px;
+          overflow: hidden;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center; }
+          .consolasContainer .juegos-4k .container-4k .cardContainer .card-plaguetale:hover {
+            transform: scale(1.1);
+            transition: all 0.5s; }
+          .consolasContainer .juegos-4k .container-4k .cardContainer .card-plaguetale img {
+            width: 60%;
+            object-fit: cover;
+            margin-bottom: 50px; }
+        .consolasContainer .juegos-4k .container-4k .cardContainer .card-redfall {
+          background-image: url("/assets/consolas/redfall.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 100%;
+          border-radius: 20px;
+          overflow: hidden;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center; }
+          .consolasContainer .juegos-4k .container-4k .cardContainer .card-redfall:hover {
+            transform: scale(1.1);
+            transition: all 0.5s; }
+          .consolasContainer .juegos-4k .container-4k .cardContainer .card-redfall img {
+            width: 60%;
+            object-fit: cover;
+            margin-bottom: 50px; }
+        .consolasContainer .juegos-4k .container-4k .cardContainer .card-starfield {
+          background-image: url("/assets/consolas/starfield.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 100%;
+          border-radius: 20px;
+          overflow: hidden;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center; }
+          .consolasContainer .juegos-4k .container-4k .cardContainer .card-starfield:hover {
+            transform: scale(1.1);
+            transition: all 0.5s; }
+          .consolasContainer .juegos-4k .container-4k .cardContainer .card-starfield img {
+            width: 60%;
+            object-fit: cover;
+            margin-bottom: 50px; }
 
 @media (max-width: 999px) {
   .headerContainer .desktop {
