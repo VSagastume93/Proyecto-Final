@@ -368,6 +368,20 @@
         .nuevosLanzamientos{
             background-size: contain;
         }
+
+        .info{
+            h1{
+                font-weight: 400;
+                font-size: 3vw;
+                text-align: center;
+            }
+
+            h2{
+                font-size: 1.5vw;
+                padding: 10px;
+                font-weight: 400;
+            }
+        }
     }
 }
 
@@ -401,12 +415,14 @@
             height: 50%;
 
             h1{
+                width: 100vw;
                 font-weight: 400;
-                font-size: 5vw;
+                font-size: 8vw;
+                text-align: center;
             }
 
             h2{
-                font-size: 3vw;
+                font-size: 20px;
                 padding: 10px;
                 font-weight: 400;
             }
