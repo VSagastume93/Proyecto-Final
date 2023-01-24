@@ -603,6 +603,24 @@
         }
        }
     }
+
+    //Comunidad//
+
+    @media (max-width: 999px){
+
+        .contenedor-campos{
+            display: flex !important;
+            flex-direction: column;
+    }
+
+    .banner{
+        .imagen{
+            input{
+                font-size: 12px !important;
+            }
+        }
+    }
+    }
     
 
 

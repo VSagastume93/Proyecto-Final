@@ -573,7 +573,7 @@
   width: 100vw; }
   .consolasContainer p {
     width: 100vw;
-    font-size: xxx-large;
+    font-size: 50px;
     text-align: center;
     margin-top: 100px;
     color: #107C10;
@@ -879,6 +879,98 @@
           color: #E6E6E6;
           transform: scale(1.1);
           transition: all 0.5s; }
+
+.mainContainer-comunidad .banner .imagen {
+  padding: 40px;
+  width: 100%;
+  height: 700px;
+  background-image: url("../assets/comunidad/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .mainContainer-comunidad .banner .imagen h1 {
+    text-shadow: black 0.1em 0.1em 0.2em;
+    color: white;
+    font-weight: 400;
+    font-size: 50px; }
+  .mainContainer-comunidad .banner .imagen input {
+    width: 70vw;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px; }
+
+.mainContainer-comunidad .contacto {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .mainContainer-comunidad .contacto .formulario {
+    background-color: #107C10;
+    border-radius: 20px;
+    padding: 30px; }
+  .mainContainer-comunidad .contacto h3 {
+    width: 100vw;
+    font-size: 50px;
+    text-align: center;
+    color: #107C10;
+    font-weight: 400; }
+  .mainContainer-comunidad .contacto fieldset {
+    width: 50vw;
+    border: none; }
+    .mainContainer-comunidad .contacto fieldset legend {
+      text-align: center;
+      color: #E6E6E6;
+      text-transform: uppercase;
+      font-size: 1rem;
+      font-weight: 400;
+      margin-bottom: 2rem; }
+    .mainContainer-comunidad .contacto fieldset .contenedor-campos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto auto 20rem;
+      column-gap: 2rem; }
+      .mainContainer-comunidad .contacto fieldset .contenedor-campos .campo:nth-child(3) {
+        grid-column: 1 / 3; }
+      .mainContainer-comunidad .contacto fieldset .contenedor-campos .campo:nth-child(1) {
+        grid-column: 1; }
+      .mainContainer-comunidad .contacto fieldset .contenedor-campos .campo:nth-child(2) {
+        grid-column: 2; }
+      .mainContainer-comunidad .contacto fieldset .contenedor-campos .campo:nth-child(4) {
+        grid-column: 1 / 3; }
+      .mainContainer-comunidad .contacto fieldset .contenedor-campos .campo {
+        margin-bottom: 1rem; }
+        .mainContainer-comunidad .contacto fieldset .contenedor-campos .campo label {
+          color: white;
+          font-weight: bold;
+          margin-bottom: 0.5rem;
+          display: block; }
+        .mainContainer-comunidad .contacto fieldset .contenedor-campos .campo textarea {
+          height: 15rem; }
+      .mainContainer-comunidad .contacto fieldset .contenedor-campos .input-text {
+        width: 100%;
+        border: none;
+        padding: 1.5rem 0;
+        border-radius: .5rem;
+        padding-inline-start: 1rem; }
+    .mainContainer-comunidad .contacto fieldset .boton-form {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .mainContainer-comunidad .contacto fieldset .boton-form .boton {
+        background-color: #E6E6E6;
+        color: #107C10;
+        font-weight: 700;
+        margin-top: 11px;
+        width: 235px;
+        height: 68px;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 10px; }
 
 @media (max-width: 999px) {
   .headerContainer .desktop {
@@ -1238,3 +1330,10 @@
       height: 400px !important; }
   .servicioTecnico .banner {
     width: 95% !important; } }
+
+@media (max-width: 999px) {
+  .contenedor-campos {
+    display: flex !important;
+    flex-direction: column; }
+  .banner .imagen input {
+    font-size: 12px !important; } }
