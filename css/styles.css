@@ -199,7 +199,7 @@
       width: 100%; }
     .games .cajaC4 a {
       position: absolute;
-      bottom: 0%;
+      top: 0%;
       right: 0; }
       .games .cajaC4 a img {
         width: 300px; }
@@ -972,6 +972,77 @@
         border: none;
         border-radius: 10px; }
 
+.mainContainer-comunidad .explorar {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 200px);
+  padding: 100px;
+  gap: 20px; }
+  .mainContainer-comunidad .explorar a {
+    transition: all 1s;
+    text-decoration: none;
+    color: black; }
+    .mainContainer-comunidad .explorar a:hover {
+      box-shadow: 0px 0px 39px -10px rgba(0, 0, 0, 0.95); }
+  .mainContainer-comunidad .explorar .caja1 {
+    grid-row: 1/3;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0px 0px 39px -10px rgba(0, 0, 0, 0.5); }
+    .mainContainer-comunidad .explorar .caja1 h1 {
+      width: 100%;
+      height: 25%;
+      padding: 20px;
+      font-weight: 400;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .mainContainer-comunidad .explorar .caja1 .imagen {
+      background-image: url("/assets/comunidad/caja1.jpg");
+      background-size: cover;
+      width: 100%;
+      height: 75%; }
+  .mainContainer-comunidad .explorar .caja2 {
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0px 0px 39px -10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-evenly; }
+    .mainContainer-comunidad .explorar .caja2 h1 {
+      width: 60%;
+      padding: 20px;
+      font-weight: 400;
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .mainContainer-comunidad .explorar .caja2 .imagen {
+      background-image: url("/assets/comunidad/caja2.jpg");
+      background-size: cover;
+      background-position: center;
+      width: 40%;
+      height: 100%; }
+  .mainContainer-comunidad .explorar .caja3 {
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0px 0px 39px -10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-evenly; }
+    .mainContainer-comunidad .explorar .caja3 h1 {
+      width: 60%;
+      padding: 20px;
+      font-weight: 400;
+      font-size: 16px;
+      display: flex;
+      align-items: center; }
+    .mainContainer-comunidad .explorar .caja3 .imagen {
+      background-image: url("/assets/comunidad/caja3.jpg");
+      background-size: cover;
+      background-position: center;
+      width: 40%;
+      height: 100%; }
+
 @media (max-width: 999px) {
   .headerContainer .desktop {
     display: none; }
@@ -1336,4 +1407,29 @@
     display: flex !important;
     flex-direction: column; }
   .banner .imagen input {
-    font-size: 12px !important; } }
+    font-size: 12px !important; }
+  .explorar {
+    display: flex !important;
+    flex-direction: column; }
+    .explorar a {
+      height: 300px; }
+    .explorar .caja1 h1 {
+      font-size: 16px; }
+    .explorar .caja2 {
+      flex-direction: column-reverse; }
+      .explorar .caja2 .imagen {
+        width: 100% !important; }
+      .explorar .caja2 h1 {
+        width: 100% !important;
+        text-align: center !important; }
+    .explorar .caja3 {
+      flex-direction: column-reverse; }
+      .explorar .caja3 .imagen {
+        width: 100% !important; }
+      .explorar .caja3 h1 {
+        width: 100% !important;
+        justify-content: center; } }
+
+@media (max-width: 999px) and (max-width: 650px) {
+  .explorar {
+    padding: 10px !important; } }

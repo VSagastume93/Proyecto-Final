@@ -130,4 +130,100 @@
         }
     }
 
+    .explorar{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 200px);
+        padding: 100px;
+        gap: 20px;  
+        
+        a{
+            transition: all 1s;
+            text-decoration: none;
+            color: black;
+
+            &:hover{
+                box-shadow: 0px 0px 39px -10px rgba(0,0,0,0.95);
+            }
+        }
+        
+        .caja1{
+            grid-row: 1/3;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0px 0px 39px -10px rgba(0,0,0,0.50);
+
+            h1{
+                width: 100%;
+                height: 25%;
+                padding: 20px;
+                font-weight: 400;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+
+            .imagen{
+                background-image: url("/assets/comunidad/caja1.jpg");
+                background-size: cover;
+                width: 100%;
+                height: 75%;
+            }
+        }
+
+        .caja2{
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0px 0px 39px -10px rgba(0,0,0,0.50);
+            display: flex;
+            justify-content: space-evenly;
+
+            h1{
+                width: 60%;
+                padding: 20px;
+                font-weight: 400;
+                font-size: 16px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+            .imagen{
+                background-image: url("/assets/comunidad/caja2.jpg");
+                background-size: cover;
+                background-position: center;
+                width: 40%;
+                height: 100%;
+            }
+        }
+
+        .caja3{
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0px 0px 39px -10px rgba(0,0,0,0.50);
+            display: flex;
+            justify-content: space-evenly;
+
+            h1{
+                width: 60%;
+                padding: 20px;
+                font-weight: 400;
+                font-size: 16px;
+                display: flex;
+                align-items: center;
+            }
+
+            .imagen{
+                background-image: url("/assets/comunidad/caja3.jpg");
+                background-size: cover;
+                background-position: center;
+                width: 40%;
+                height: 100%; 
+            }
+        }
+    }
 }
