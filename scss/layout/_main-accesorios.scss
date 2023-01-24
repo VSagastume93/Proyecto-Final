@@ -1,0 +1,156 @@
+.mainContainer-accesorios{
+    .banner-principal{
+        margin-top: 80px;
+        .description{
+            width: 100vw;
+            height: auto    ;
+            background-color: $color-principal;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h1{
+                text-shadow: black 0.1em 0.1em 0.2em;
+                color: white;
+                font-weight: 400;
+                font-size: 50px;
+            }
+
+            h2{
+                text-shadow: black 0.1em 0.1em 0.2em;
+                color: white;
+                font-weight: 400;
+                font-size: 20px;
+            }
+
+        }
+
+
+        .imagen{
+            width: 100vw;
+            height: 30vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $color-principal;
+
+            .img{
+                width: 70%;
+                height: 100%;
+                background-image: url("../assets/accesorios/banner.webp");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+    }
+
+
+    .accesorios{
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .mas-vendidos{
+            margin-top: 30px;
+            width: 100vw;
+            font-size: 30px;
+            text-align: center;
+            color: $color-principal;
+            font-weight: 400;
+            text-shadow: black 0.05em 0.05em 0.1em;
+        }
+        
+        .card-container{
+
+            width: 100%;
+            padding: 40px;
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center ;
+
+            .card{
+                width: 300px;
+                height: 400px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px;
+                border-radius: 20px;
+                box-shadow: 0px 0px 39px -10px rgba(0,0,0,0.50);
+
+                h1{
+                    text-align: center;
+                }
+
+                h2{
+                    color: $verde-oscuro;
+                }
+
+                img{
+                    width: 100%;
+                }
+
+                a{
+                    display: flex;
+                    justify-self: center;
+                    align-items: center;
+                    gap: 8px;
+                    text-decoration: none;
+                    color: $color-principal;
+                    font-weight: 700;
+
+
+                    img{
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .banner-design{
+        margin: 30px 0 30px 0;
+        width: 70%;
+        height: 30vw;
+        border-radius: 20px;
+        background-image: url("../assets/accesorios/designlab.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        box-shadow: 0px 0px 39px -10px rgba(0,0,0,0.90);
+        text-decoration: none;
+
+        .banner{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 40px;
+
+            h1{
+                text-shadow: black 0.1em 0.1em 0.2em;
+                color: white;
+                font-weight: 700;
+                font-size: 3vw;
+            }
+
+            h2{
+                text-shadow: black 0.1em 0.1em 0.2em;
+                    color: white;
+                    font-weight: 400;
+                    font-size: 1.5vw;
+            }
+            
+        }
+    }
+}

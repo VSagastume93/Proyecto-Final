@@ -1043,6 +1043,120 @@
       width: 40%;
       height: 100%; }
 
+.mainContainer-accesorios .banner-principal {
+  margin-top: 80px; }
+  .mainContainer-accesorios .banner-principal .description {
+    width: 100vw;
+    height: auto;
+    background-color: #107C10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .mainContainer-accesorios .banner-principal .description h1 {
+      text-shadow: black 0.1em 0.1em 0.2em;
+      color: white;
+      font-weight: 400;
+      font-size: 50px; }
+    .mainContainer-accesorios .banner-principal .description h2 {
+      text-shadow: black 0.1em 0.1em 0.2em;
+      color: white;
+      font-weight: 400;
+      font-size: 20px; }
+  .mainContainer-accesorios .banner-principal .imagen {
+    width: 100vw;
+    height: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #107C10; }
+    .mainContainer-accesorios .banner-principal .imagen .img {
+      width: 70%;
+      height: 100%;
+      background-image: url("../assets/accesorios/banner.webp");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+
+.mainContainer-accesorios .accesorios {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .mainContainer-accesorios .accesorios .mas-vendidos {
+    margin-top: 30px;
+    width: 100vw;
+    font-size: 30px;
+    text-align: center;
+    color: #107C10;
+    font-weight: 400;
+    text-shadow: black 0.05em 0.05em 0.1em; }
+  .mainContainer-accesorios .accesorios .card-container {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    .mainContainer-accesorios .accesorios .card-container .card {
+      width: 300px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      border-radius: 20px;
+      box-shadow: 0px 0px 39px -10px rgba(0, 0, 0, 0.5); }
+      .mainContainer-accesorios .accesorios .card-container .card h1 {
+        text-align: center; }
+      .mainContainer-accesorios .accesorios .card-container .card h2 {
+        color: #035903; }
+      .mainContainer-accesorios .accesorios .card-container .card img {
+        width: 100%; }
+      .mainContainer-accesorios .accesorios .card-container .card a {
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+        color: #107C10;
+        font-weight: 700; }
+        .mainContainer-accesorios .accesorios .card-container .card a img {
+          width: 20px; }
+
+.mainContainer-accesorios .banner-design {
+  margin: 30px 0 30px 0;
+  width: 70%;
+  height: 30vw;
+  border-radius: 20px;
+  background-image: url("../assets/accesorios/designlab.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0px 0px 39px -10px rgba(0, 0, 0, 0.9);
+  text-decoration: none; }
+  .mainContainer-accesorios .banner-design .banner {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px; }
+    .mainContainer-accesorios .banner-design .banner h1 {
+      text-shadow: black 0.1em 0.1em 0.2em;
+      color: white;
+      font-weight: 700;
+      font-size: 3vw; }
+    .mainContainer-accesorios .banner-design .banner h2 {
+      text-shadow: black 0.1em 0.1em 0.2em;
+      color: white;
+      font-weight: 400;
+      font-size: 1.5vw; }
+
 @media (max-width: 999px) {
   .headerContainer .desktop {
     display: none; }
@@ -1433,3 +1547,20 @@
 @media (max-width: 999px) and (max-width: 650px) {
   .explorar {
     padding: 10px !important; } }
+
+@media (max-width: 500px) {
+  .mainContainer-accesorios .banner-principal .description {
+    gap: 10px; }
+    .mainContainer-accesorios .banner-principal .description h1 {
+      font-size: 40px;
+      text-align: center; }
+    .mainContainer-accesorios .banner-principal .description h2 {
+      text-align: center; }
+  .mainContainer-accesorios .banner-design {
+    width: 90% !important; }
+    .mainContainer-accesorios .banner-design .banner {
+      padding: 10px; }
+      .mainContainer-accesorios .banner-design .banner h1 {
+        font-size: 4vw; }
+      .mainContainer-accesorios .banner-design .banner h2 {
+        font-size: 2vw; } }

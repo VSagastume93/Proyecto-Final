@@ -671,3 +671,40 @@
         }
     }
 }
+
+//Accesorios//
+
+@media (max-width: 500px) {
+    .mainContainer-accesorios{
+        .banner-principal{
+           
+            .description{
+                gap: 10px;
+
+               h1{
+                font-size: 40px;
+                text-align: center;
+               }
+
+               h2{
+                text-align: center;
+               }
+            }
+        }
+
+        .banner-design{
+            width: 90% !important;
+            .banner{
+                padding: 10px;
+
+                h1{
+                    font-size: 4vw;
+                }
+
+                h2{
+                    font-size: 2vw;
+                }
+            }
+        }
+    }    
+}
