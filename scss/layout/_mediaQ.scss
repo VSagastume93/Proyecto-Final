@@ -541,6 +541,13 @@
                 }
                }
 
+               .cuatro-k{
+                h1{
+
+                    margin-top: 50px !important;
+                }
+               }
+
                .fotogramas{
                 padding-left: 20%;
                }
@@ -551,8 +558,8 @@
 
                .velocity{
                 width: 100%;
-                height: auto;
                 padding-left: 50%;
+
 
                 h3{
                     text-align: center;
@@ -563,10 +570,15 @@
        }
 
        .container-4k{
-        
+
+
         h1{
             margin: 50px 0 50px 0 !important;
-            font-size: 3vw !important;
+            font-size: 5vw !important;
+        }
+
+        h2{
+            font-size: 2vw !important;
         }
        }
 
@@ -575,14 +587,19 @@
         gap: 40px !important;
         height: auto;
         flex-wrap: wrap;
-        overflow: hidden;
+        // overflow: hidden;
         justify-content: center;
         align-items: center;
 
         .card{
-            width: 25% !important;
-            height: 35% !important;
-            height: 400px;
+            width: 200px !important;
+            height: 400px !important;
+        }
+       }    
+
+       .servicioTecnico{
+        .banner{
+            width: 95% !important;
         }
        }
     }

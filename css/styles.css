@@ -703,7 +703,8 @@
         -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
         animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
         .consolasContainer .velocity-tec .velocity-img .caracteristicas .velocity img {
-          width: 30%; }
+          width: 100px;
+          height: 60px; }
 
 @-webkit-keyframes text-focus-in {
   0% {
@@ -728,17 +729,18 @@
     width: 100%; }
     .consolasContainer .juegos-4k .container-4k {
       width: 100%;
-      height: 900px;
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../assets/consolas/starfield.jpg");
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      align-items: center; }
+      align-items: center;
+      background-size: cover;
+      gap: 50px; }
       .consolasContainer .juegos-4k .container-4k h1 {
         text-shadow: black 0.1em 0.1em 0.2em;
         color: white;
         font-weight: 400;
-        font-size: 1.5vw;
+        font-size: 30px;
         margin-top: 100px; }
       .consolasContainer .juegos-4k .container-4k h2 {
         width: 50%;
@@ -754,6 +756,7 @@
         gap: 5px; }
         .consolasContainer .juegos-4k .container-4k .cardContainer .card {
           width: 20%;
+          height: 600px;
           overflow: hidden;
           border-radius: 20px; }
         .consolasContainer .juegos-4k .container-4k .cardContainer .card-dl {
@@ -1207,28 +1210,31 @@
       padding: 0 50px 0 50px; }
       .velocity-tec .velocity-img .caracteristicas div img {
         width: 10%; }
+    .velocity-tec .velocity-img .caracteristicas .cuatro-k h1 {
+      margin-top: 50px !important; }
     .velocity-tec .velocity-img .caracteristicas .fotogramas {
       padding-left: 20%; }
     .velocity-tec .velocity-img .caracteristicas .ocho-k {
       padding-left: 40%; }
     .velocity-tec .velocity-img .caracteristicas .velocity {
       width: 100%;
-      height: auto;
       padding-left: 50%; }
       .velocity-tec .velocity-img .caracteristicas .velocity h3 {
         text-align: center; }
   .container-4k h1 {
     margin: 50px 0 50px 0 !important;
-    font-size: 3vw !important; }
+    font-size: 5vw !important; }
+  .container-4k h2 {
+    font-size: 2vw !important; }
   .cardContainer {
     width: 100% !important;
     gap: 40px !important;
     height: auto;
     flex-wrap: wrap;
-    overflow: hidden;
     justify-content: center;
     align-items: center; }
     .cardContainer .card {
-      width: 25% !important;
-      height: 35% !important;
-      height: 400px; } }
+      width: 200px !important;
+      height: 400px !important; }
+  .servicioTecnico .banner {
+    width: 95% !important; } }
