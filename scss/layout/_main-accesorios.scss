@@ -2,7 +2,7 @@
     .banner-principal{
         margin-top: 80px;
         .description{
-            width: 100vw;
+            width: 100%;
             height: auto    ;
             background-color: $color-principal;
             display: flex;
@@ -28,7 +28,7 @@
 
 
         .imagen{
-            width: 100vw;
+            width: 100%;
             height: 30vw;
             display: flex;
             justify-content: center;
@@ -57,7 +57,7 @@
 
         .mas-vendidos{
             margin-top: 30px;
-            width: 100vw;
+            width: 100%;
             font-size: 30px;
             text-align: center;
             color: $color-principal;
