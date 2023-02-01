@@ -116,7 +116,8 @@
         border: none; }
         .mainContainer .welcomeInfo .left .boton-x:hover {
           background-color: #035903;
-          transition: all 0.2s; }
+          transition: all 0.2s;
+          cursor: pointer; }
 
 .slideshow-container {
   width: 100%;
