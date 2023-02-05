@@ -1036,7 +1036,8 @@
       font-weight: 400;
       font-size: 16px;
       display: flex;
-      align-items: center; }
+      align-items: center;
+      justify-content: center; }
     .mainContainer-comunidad .explorar .caja3 .imagen {
       background-image: url("../assets/comunidad/caja3.jpg");
       background-size: cover;
